@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 0, 5, 0.952);
+    color: whitesmoke;
+}
+
+header{
+    height: 10%;
+    width: 85%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+}
+
+#open-menu-mobile{
+    display: none;
+}
+
+#inputarea{
+    height: 40px;
+    width: 30%;
+    background-color: rgb(1, 0, 5);
+    display: flex;
+    margin:2% 0% 0% 6%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    animation: search 2s linear;
+    transform-origin: center;
+    
+}
+
+#inputarea input{
+    height: 90%;
+    width: 80%;
+    background-color: rgba(14, 12, 24, 0.294);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+#open-search{
+    display: none;
+}
+
+nav{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(1, 0, 5);
+}
+
+#mark-pc{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#mark-mobile{
+    display: none;
+
+}
+
+#mark-mobile ion-icon{
+    font-size: 20px;
+    color: rgba(163, 5, 211, 0.459);
+
+}
+
+#mark-pc ion-icon{
+    font-size: 20px;
+    color: rgba(163, 5, 211, 0.459);
+
+}
+
+
+
+#bar{
+    height: 90%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#bar li{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#bar li:hover{
+    background-color: rgba(163, 5, 211, 0.459);
+}
+
+#bar li p{
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+#support{
+    margin-top: 50px;
+}
+
+#out{
+    margin-top: 120px;
+}
+
+main{
+    height: 90%;
+    width: 85%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    padding: 30px 0px 0px 70px;
+
+}
+
+#image{
+    height: 30%;
+    width: 65%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+#table{
+    margin-top: 5%;
+    height: 57%;
+    width: 65%;
+    background-color: rgb(1, 0, 5);
+    border-radius: 5px;
+}
+
+#table ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#table ul li{
+    height: 16.5%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: absolute;
+    border-bottom: solid 1px rgb(34, 34, 34);
+    transition: margin 2s linear;
+    
+}
+#l1{
+    margin-top: 7%;
+    animation: l1 0.5s 5s linear 1;
+}
+#l2{
+    margin-top: 14%;
+    animation: l2 0.5s 5s linear 1;
+
+}
+#l3{
+    margin-top: 21%;
+    animation: l3 0.5s 3s linear 1;
+
+}
+#l4{
+    margin-top: 28%;
+}
+#l5{
+    margin-top: 35%;
+    animation: l5 0.5s 3s linear 1;
+
+}
+
+#table ul li img{
+    height: 20px;
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+.numbers{
+    font-size: 11px;
+}
+
+.itens-table-infx{
+    font-size: 10px;
+    margin-left: 40px;
+    color: grey;
+}
+
+.itens-table-inff{
+    font-size: 10px;
+    margin-left: 260px;
+    color: grey;
+
+}
+
+.itens-table-inf{
+    font-size: 10px;
+    margin-left: 95px;
+    color: grey;
+
+}
+
+.equal-columns{
+    font-size: 12px;
+    margin-left: 80px;
+}
+
+.column-spacee{
+    margin-left: 200px;
+    font-size: 12px;
+}
+
+.column-space{
+    margin-left: 80px;
+    font-size: 12px;
+}
+
+#mms{
+    height: 60%;
+    width: 25%;
+    background-color: rgb(1, 0, 5);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mms-title{
+    margin-top: 5px;
+}
+
+#conf-mms{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+}
+
+#mms-ary{
+    height: 84%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin-top: 20px;
+}
+#mms-ary-buttons{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#mms-ary-buttons button{
+    width: 100px;
+    height: 80%;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(41, 41, 41, 0.979);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.image-but{
+    height: 20px;
+}
+
+
+
+
+#mms-ary-facetier{
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px rgba(22, 22, 22, 0.897);
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 10px;
+
+}
+
+#facetier-select{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+#facetier-select p{
+    color: green;
+}
+
+
+#ddts-deposit{
+    margin-top: 20px;
+}
+
+.ddts{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(41, 41, 41, 0.979);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+}
+
+#mms-button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(14, 118, 216, 0.979);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+
+#mms-button:hover{
+    background-color: rgba(10, 96, 175, 0.979);
+}
+
+#inf{
+    height: 30%;
+    width: 25%;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#inf img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.frame{
+    animation: hiddenimage 2s  linear ;
+}
+
+.opacity{
+    animation: opaci 2s  linear ;
+
+}
+
+
+#one-block-text-mobile, #two-block-text-mobile, #tree-block-text-mobile-min1 {
+    display: none;
+}
+
+
+@keyframes hiddenimage{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(300px);
+
+    }
+}
+
+@keyframes opaci{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+}
+
+
+
+
+@keyframes search{
+    0%{
+        opacity: 0;
+        width: 0%;
+
+    }
+    50%{
+        width: 9%;
+    }
+    
+
+    50%{
+        opacity: 1;
+        width: 18%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+
+    body{
+        height: 1500px;
+    }
+
+    header{
+        height: 10vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 5;
+        top: 0%;
+        right: 0%;
+        display: flex;
+        align-items: center;
+        background-color: #000000c0;
+    }
+
+    #open-menu-mobile{
+        position: fixed;
+        z-index: 5;
+        top: 1.8%;
+        left: 5%;
+        display: block;
+        font-size: 30px;
+    }
+
+    #inputarea{
+        
+        display: none;
+        
+    }
+
+    #open-search{
+        position: fixed;
+        z-index: 5;
+        top: 3%;
+        right: 5%;
+        display: none;
+        font-size: 20px;
+
+    }
+
+    #mark-pc{
+        display: none;
+
+    }
+    #mark-mobile{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 35%;
+        
+
+    }
+
+    nav{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 4;
+        height: 100%;
+        width: 35%;
+        background-color: rgb(1, 0, 5);
+        display: none;
+    }
+
+    #prime-li-nav{
+        margin-top: 35%;
+    }
+
+    main{
+        height: 90%;
+        width: 100%;
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+        padding: 5%;
+    
+    }
+
+    #image{
+        height: 10%;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        top: 4%;
+        margin: 0%;
+    }
+
+    #mms{
+        height: 27%;
+        width: 70%;
+        background-color: rgb(1, 0, 5);
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #table{
+        margin-top: 5%;
+        height:11%;
+        width: 100%;
+        background-color: rgb(1, 0, 5);
+        border-radius: 5px;
+        position: relative;
+        top: 3%;
+    }
+    
+    #table ul{
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    #table ul li{
+        height: 20%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        position: absolute;
+        border-bottom: solid 1px rgb(34, 34, 34);
+        transition: margin 2s linear;
+        
+    }
+
+    .itens-table-infx{
+        font-size: 10px;
+        margin-left:0px;
+        color: grey;
+    }
+    
+    .itens-table-inff{
+        font-size: 10px;
+        margin-left: 120px;
+        color: grey;
+    
+    }
+    
+    .itens-table-inf{
+        font-size: 10px;
+        margin-left: 65px;
+        color: grey;
+    
+    }
+
+
+    .equal-columns{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+    .column-spacee{
+        margin-left: 95px;
+        font-size: 12px;
+    }
+    
+    .column-space{
+        margin-left: 40px;
+        font-size: 12px;
+    }
+
+    #one-block-text-mobile{
+        display: block;
+        height: 10%;
+        width: 90%;
+        position: absolute;
+        top: 28%;
+    }
+
+    .shhi{
+        font-size: 10px;
+        text-align: justify;
+    }
+    
+    #inf{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 82%;
+        left: 5%;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #two-block-text-mobile{
+        display: block;
+        height: 10%;
+        width: 90%;
+        position: absolute;
+        top: 70%;
+    }
+
+    #tree-block-text-mobile-min1{
+        display: block;
+        height: 10%;
+        width: 45%;
+        position: absolute;
+        top: 83%;
+        margin-left: 40%;
+    }
+
+    .min{
+        font-size: 10px;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+}
